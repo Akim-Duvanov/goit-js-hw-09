@@ -29,7 +29,7 @@ if (localStorage.getItem(keyName)) {
     try {
         parsedData = JSON.parse(localStorage.getItem(keyName)) || {};
     } catch (e) {
-        console.log("Invalid JSON in localStorage:");
+        alert("Invalid JSON in localStorage:");
     }
     form.elements.email.value = parsedData.email || "";
     form.elements.message.value = parsedData.message || "";
