@@ -43,7 +43,7 @@ function handleSubmit(event) {
     event.preventDefault();
     for (let elem in formData) {
         if (formData[elem].trim() === "") {
-            console.log("Fill please all fields");
+            alert("Fill please all fields");
             return;
         }
     }
